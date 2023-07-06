@@ -1,0 +1,180 @@
+:root {
+    --Blue: hsl(223, 87%, 63%);
+    --PaleBlue: hsl(223, 100%, 88%);
+    --LightRed: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 55px;
+    display: grid;
+    place-content: center;
+}
+
+.header-logo_div {
+    width: 355px;
+    height: 150px;
+    display: grid;
+    place-content: center;
+}
+
+.header-logo_div > img {
+    height: 28px;
+}
+
+.section-container {
+    width: 355px;
+}
+
+.section-container_title {
+    font-size: 1.5em;
+}
+
+.section-container_title > span {
+    font-weight: 300;
+    color: var(--Gray);
+}
+
+.section-container_h2 {
+    font-weight: 300;
+    font-size: .8em;
+    margin-bottom: 60px;
+}
+
+input {
+    width: 355px;
+    height: 60px;
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+
+.section-container_div-form_email {
+    border: 2px solid var(--PaleBlue);
+    font-size: .8em;
+    font-weight: 300;
+    font-family: "libre Franklin";
+}
+
+.active {
+    border: 2px solid var(--LightRed);
+}
+
+.section-container_div-form_error {
+    color: var(--LightRed);
+    font-size: .6em;
+    font-style: italic;
+    display: none;
+    margin-bottom: 20px;
+}
+
+.active-error{
+    display: block;
+}
+
+.section-container_div-form_button {
+    background-color: var(--Blue);
+    border: none;
+    font-size: 1em;
+    color:  white;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.section-container_div-img {
+    width: 355px;
+    height: 250px;
+    background-image: url(./images/illustration-dashboard.png);
+    background-size: 100%;
+    margin-top: 85px;
+}
+
+.section-container_div-redes {
+    margin-top: 200px;
+    font-size: .8em;
+    
+}
+
+.facebook-icon, .twitter-icon, .instagram-icon {
+    padding: 10px;
+    border: 1px solid hsl(0, 2%, 88%) ;
+    border-radius: 50px;
+    margin: 10px;
+    cursor: pointer;
+    color: #4b7df4;
+}
+
+.facebook-icon:hover, .twitter-icon:hover, .instagram-icon:hover {
+    background-color: #4b7df4;
+    color: white;
+}
+
+.facebook-icon {
+    padding: 10px 13px;
+}
+
+.section-container_div-copy {
+    margin: 55px;
+    color: var(--Gray);
+    font-size: .7em;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media (min-width : 700px) {
+
+    .header-logo_div, .section-container, .section-container_div-form {
+        width: 655px;
+    }
+    .section-container_title{
+        font-size: 2.5em;
+    }
+    .section-container_h2{
+        font-size: 1em;
+    }
+    .section-container_div-form_email{
+        width: 420px;
+        height: 60px;
+        font-size: .9em;
+    }
+    .active-error {
+        display: block;
+        font-size: .7em;
+        position: absolute;
+        margin-left: 50px;
+    }
+    .section-container_div-form_button{
+        width: 200px;
+        height: 60px;
+        font-size: .9em;
+    }
+    .section-container_div-img {
+        width: 655px;
+        height: 400px;
+    }
+    .section-container_div-redes {
+        font-size: .7em;
+        margin-top: 70px;
+    }
+    .facebook-icon, .twitter-icon, .instagram-icon {
+        padding: 10px;
+    }
+    .facebook-icon {
+        padding: 10px 13px;
+    }
+    .section-container_div-copy{
+        font-size: .7em;
+    }
+}
